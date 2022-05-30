@@ -1,0 +1,38 @@
+{
+    "name": "mugennsou/php-cs-fixer-config",
+    "description": "Common PHP code style configuration",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "type": "library",
+    "authors": [
+        {
+            "name": "MA JIAN",
+            "email": "mj501738931@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mugennsou\\CodeStyle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mugennsou\\CodeStyle\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "require": {
+        "php": "^8.1",
+        "friendsofphp/php-cs-fixer": "^3.8"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.22",
+        "phpstan/phpstan": "^1.9"
+    }
+}
